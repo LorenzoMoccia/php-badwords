@@ -1,6 +1,8 @@
 <?php
     //Paragrafo a mia scelta
-    $paragraph = "Esercizio PHP";
+    $paragraph = "Quella bella ragazza con le tette grandi";
+    $censoredWord = $_GET['tette'];
+    $newParagraph = str_replace("$censoredWord", "***", $paragraph);
     
 ?>
 
@@ -14,7 +16,8 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo $paragraph?>
-    <?php echo strlen($paragraph)?>
+    <p>Paragrafo:<?php echo $paragraph?><p>
+    <p>Lunghezza:<?php echo strlen($paragraph)?></p>
+    <?php echo $newParagraph ?>
 </body>
 </html>
