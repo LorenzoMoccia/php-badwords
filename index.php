@@ -1,3 +1,10 @@
+<?php
+    //Paragrafo a mia scelta
+    $paragraph = "Esercizio PHP";
+    
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +14,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php echo $paragraph?>
+    <?php echo strlen($paragraph)?>
 </body>
 </html>
